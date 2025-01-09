@@ -540,7 +540,7 @@ h3.my-profession {
 
 /* Service */
 
-.service .container {
+/* .service .container {
     padding-bottom: 40ox;
 }
 
@@ -601,13 +601,13 @@ h3.my-profession {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
-}
+} */
 
 
 /* Portfolio */
 
 .portfolio .container {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .portfolio .portfolio-heading {
@@ -772,4 +772,34 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+.portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-img img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.portfolio-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.portfolio-img:hover .portfolio-desc {
+    opacity: 1;
 }
